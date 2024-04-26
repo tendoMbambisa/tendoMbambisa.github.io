@@ -1,6 +1,11 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 /*===== VARIABLES CSS =====*/
 :root {
     --header-height: 3rem;
@@ -55,6 +60,8 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2, p {
@@ -106,6 +113,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
+    justify-content: center;
     max-width: 1024px;
     display: grid;
     margin-left: var(--mb-2);
@@ -201,6 +209,7 @@ img {
 }
 
 .home__data {
+    padding-right: 350px;
     align-self: center;
 }
 
@@ -212,6 +221,7 @@ img {
 .home__title-color {
     color: var(--first-color);
 }
+
 
 .home__social {
     display: flex;
@@ -238,6 +248,7 @@ img {
 
 .home__blob {
     fill: var(--first-color);
+    
 }
 
 .home__blob-img {
@@ -536,15 +547,3 @@ img {
     }
 }
 
-@media screen and (min-width: 992px) {
-    .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .home {
-        padding: 10rem 0 2rem;
-    }
-    .home__img {
-        width: 450px;
-    }
-}
