@@ -54,3 +54,18 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+//typing effect
+  var i = 0;
+  var txt = 'programing'; // The text you want to display
+  var speed = 300 ; // The speed/duration of the effect in milliseconds
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  // Call the function to start the typing effect
+  typeWriter();
